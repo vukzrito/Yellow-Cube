@@ -1,0 +1,29 @@
+<div class=" ">
+  <div id="pre-bootstrap" *ngIf="!removePrebootScreen" [class.prebootShow.app-component]="!isAppLoaded" class="app-component prebootStep">
+    <div class="messaging">
+      <h1>
+        Loaded!
+      </h1>
+      <p>
+        Company Name &copy;
+      </p>
+
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+
+
+
+  <div *ngIf="shouldShowLoginModal" class="modal fade login-control" bsModal #loginModal="bs-modal" (onShown)="onLoginModalShown()" (onHidden)="onLoginModalHidden()" (onHide)="onLoginModalHide()"
+       [config]="{backdrop: 'static'}" tabindex="-1">
+    <div class="modal-dialog modal-lg h-75 d-flex flex-column justify-content-center my-0">
+      <div class="modal-content">
+        <div class="modal-body">
+          <app-login #loginControl isModal="true"></app-login>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

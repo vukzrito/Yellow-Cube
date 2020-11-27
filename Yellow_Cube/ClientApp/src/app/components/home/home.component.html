@@ -1,0 +1,144 @@
+<div class="">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <h4 class="page-title">Dashboard</h4>
+                <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">App</a></li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end page title -->
+    <div [@fadeInOut]>
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="knob-chart" dir="ltr">
+                                <div style="display:inline;width:70px;height:70px;"><canvas width="87" height="87"
+                                        style="width: 70px; height: 70px;"></canvas><input data-plugin="knob"
+                                        data-width="70" data-height="70" data-fgcolor="#1abc9c" data-bgcolor="#d1f2eb"
+                                        value="58" data-skin="tron" data-angleoffset="0" data-readonly="true"
+                                        data-thickness=".15" readonly="readonly"
+                                        style="width: 39px; height: 23px; position: absolute; vertical-align: middle; margin-top: 23px; margin-left: -54px; border: 0px; background: none; font: bold 14px Arial; text-align: center; color: rgb(26, 188, 156); padding: 0px; appearance: none;">
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <h3 class="mb-1 mt-0"> <span data-plugin="counterup">268</span> </h3>
+                                <p class="text-muted mb-0">New Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-xl-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="knob-chart" dir="ltr">
+                                <div style="display:inline;width:70px;height:70px;"><canvas width="87" height="87"
+                                        style="width: 70px; height: 70px;"></canvas><input data-plugin="knob"
+                                        data-width="70" data-height="70" data-fgcolor="#0a3070" data-bgcolor="#d8eff8"
+                                        value="80" data-skin="tron" data-angleoffset="0" data-readonly="true"
+                                        data-thickness=".15" readonly="readonly"
+                                        style="width: 39px; height: 23px; position: absolute; vertical-align: middle; margin-top: 23px; margin-left: -54px; border: 0px; background: none; font: bold 14px Arial; text-align: center; color: rgb(59, 175, 218); padding: 0px; appearance: none;">
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <h3 class="mb-1 mt-0"> <span data-plugin="counterup">8574</span> </h3>
+                                <p class="text-muted mb-0">Online Orders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-xl-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="knob-chart" dir="ltr">
+                                <div style="display:inline;width:70px;height:70px;"><canvas width="87" height="87"
+                                        style="width: 70px; height: 70px;"></canvas><input data-plugin="knob"
+                                        data-width="70" data-height="70" data-fgcolor="#f672a7" data-bgcolor="#fde3ed"
+                                        value="77" data-skin="tron" data-angleoffset="0" data-readonly="true"
+                                        data-thickness=".15" readonly="readonly"
+                                        style="width: 39px; height: 23px; position: absolute; vertical-align: middle; margin-top: 23px; margin-left: -54px; border: 0px; background: none; font: bold 14px Arial; text-align: center; color: rgb(246, 114, 167); padding: 0px; appearance: none;">
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <h3 class="mb-1 mt-0"> R <span data-plugin="counterup">958.25</span> </h3>
+                                <p class="text-muted mb-0">Revenue</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-xl-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="knob-chart" dir="ltr">
+                                <div style="display:inline;width:70px;height:70px;"><canvas width="87" height="87"
+                                        style="width: 70px; height: 70px;"></canvas><input data-plugin="knob"
+                                        data-width="70" data-height="70" data-fgcolor="#6c757d" data-bgcolor="#e2e3e5"
+                                        value="35" data-skin="tron" data-angleoffset="0" data-readonly="true"
+                                        data-thickness=".15" readonly="readonly"
+                                        style="width: 39px; height: 23px; position: absolute; vertical-align: middle; margin-top: 23px; margin-left: -54px; border: 0px; background: none; font: bold 14px Arial; text-align: center; color: rgb(108, 117, 125); padding: 0px; appearance: none;">
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <h3 class="mb-1 mt-0"> R <span data-plugin="counterup">89.25</span> </h3>
+                                <p class="text-muted mb-1">Daily Average</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+        </div>
+        <div class="row">
+            <div *ngIf="!configurations.showDashboardStatistics && !configurations.showDashboardNotifications && !configurations.showDashboardTodo && !configurations.showDashboardBanner"
+                class="col-12 my-5">
+                <div class="card card-body bg-light">
+                    <h4 class="text-muted text-center">
+                        {{'home.NoWidgets1' | translate}} <a routerLink="/settings" fragment="preferences"><i
+                                class="fa fa-sliders"></i> {{'settings.tab.Preferences' | translate}}</a>
+                        {{'home.NoWidgets2' | translate}}
+                    </h4>
+                </div>
+            </div>
+
+            <div *ngIf="configurations.showDashboardStatistics" class="col-12 my-3">
+                <button type="button" class="close" aria-label="Close" title="Close"
+                    (click)="configurations.showDashboardStatistics = false">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="clearfix"></div>
+                <div class="card card-body bg-light">
+                    <h5 class="text-muted d-inline-block">{{'home.StatisticsTitle' | translate}}</h5>
+                    <statistics-demo></statistics-demo>
+                </div>
+            </div>
+
+            <div *ngIf="configurations.showDashboardNotifications" class="col-12 my-3">
+                <button type="button" class="close" aria-label="Close" title="Close"
+                    (click)="configurations.showDashboardNotifications = false">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="clearfix"></div>
+                <notifications-viewer></notifications-viewer>
+            </div>
+
+        </div>
+    </div>
+</div>
