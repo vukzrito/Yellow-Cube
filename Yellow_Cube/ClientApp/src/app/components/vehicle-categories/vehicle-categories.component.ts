@@ -18,6 +18,7 @@ export class VehicleCategoriesComponent implements OnInit {
 
   ngOnInit() {
     this.vehicleCategory = new VehicleCategory();
+    this.loadCategories();
   }
 
   loadCategories() {
@@ -32,6 +33,16 @@ export class VehicleCategoriesComponent implements OnInit {
     this.vehicleCategory = new VehicleCategory();
 
     this.modal = this.modalService.show(content, {});
+  }
+
+  addVehicleCategory(event: Event) {
+    event.preventDefault();
+
+    this.alertService.startLoadingMessage();
+    this.vehicleCategoriesService.createVehicleCategory(this.vehicleCategory).subscribe(res => {
+      this.alertService.stopLoadingMessage();
+    });
+
   }
 
 }
